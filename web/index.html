@@ -7,30 +7,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
-            --bg1: #0f172a;
-            --bg2: #7c3aed;
-            --accent: #f97316;
+            /* Tema claro: fondo blanco y acento accesible */
+            --page-bg: #ffffff;
+            --text-color: #212529; /* gris muy oscuro para lectura */
+            --muted: #6c757d;
+            --card-bg: #ffffff;
+            --card-border: #e9ecef;
+            --accent: #0d6efd; /* azul bootstrap */
         }
 
         body {
             min-height: 100vh;
-            background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.04), transparent 10%),
-            linear-gradient(135deg, var(--bg1), var(--bg2));
-            color: #f8fafc;
+            background: var(--page-bg);
+            color: var(--text-color);
             font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
         }
 
         .hero {
-            padding: 4rem 1rem;
+            padding: 3.5rem 1rem;
             text-align: center;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
-            border-radius: .75rem;
-            box-shadow: 0 6px 30px rgba(2, 6, 23, 0.6);
+            background: #f8f9fa; /* tarjeta ligera sobre fondo blanco */
+            border-radius: .5rem;
+            box-shadow: 0 4px 18px rgba(33, 37, 41, 0.06);
         }
 
         .card-menu {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
         }
 
         .decor {
@@ -55,10 +58,10 @@
         <p class="lead mb-3">Acompáñanos a celebrar la magia de la Navidad con una cena especial y buenos momentos.</p>
         <p class="decor mb-3">Sábado 24 de diciembre · 14:00 · Casa de la Familia</p>
         <div class="d-flex justify-content-center gap-2">
-            <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#rsvpModal">Confirmar
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#rsvpModal">Confirmar
                 asistencia
             </button>
-            <a href="#menu" class="btn btn-outline-light btn-lg">Ver menú</a>
+            <a href="#menu" class="btn btn-outline-primary btn-lg">Ver menú</a>
         </div>
     </div>
 
@@ -160,7 +163,7 @@
                     <div class="form-text">Número de personas adicionales</div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Preferencias</label>
+                    <label for="pref" class="form-label">Preferencias</label>
                     <select class="form-select" id="pref">
                         <option value="ninguna">Ninguna</option>
                         <option value="vegetariano">Vegetariano</option>
@@ -170,7 +173,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="submit" class="btn btn-warning">Enviar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
         </form>
     </div>
