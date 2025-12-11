@@ -1,15 +1,3 @@
-# prueba_pages
+# Ejemplo GitHub Pages
 
-```
- _________________________________________
-/ Marriage is low down, but you spend the \
-| rest of your life paying for it.        |
-|                                         |
-\ -- Baskins                              /
- -----------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
+Publicar una web rápidamente en GitHub Pages.
